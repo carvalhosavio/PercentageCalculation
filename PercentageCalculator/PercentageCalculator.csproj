@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+	  <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -13,7 +13,18 @@
     <RepositoryUrl>https://github.com/carvalhosavio/PercentageCalculation</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <NeutralLanguage>pt-BR</NeutralLanguage>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<PackageLicenseFile>.\LICENSE.txt</PackageLicenseFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <None Remove="NovaPasta\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Enums\" />
@@ -26,5 +37,9 @@
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
+
+	<ItemGroup>
+		<None Include=".\LICENSE.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
