@@ -1,3 +1,3 @@
 # PercentageCalculation
 
-PercentageCalculation é uma biblioteca de calculos matematicos de porcentagem.
+PercentageCalculation is a library of percentage math calculations.
