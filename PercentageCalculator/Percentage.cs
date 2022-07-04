@@ -5,54 +5,42 @@
         private const double PercentageParam = 100;
 
         /// <summary>Returns the percentage equivalent to X percent of Y.</summary>
-        /// <param name="x">A number greater than 0. representing percentage </param>
-        /// <param name="y">A number greater than 0</param>
-        public static double CalcPercentageXOfY(double x, double y)
+        public static double PctXOfY(double x, double y)
         {
             return x * y / PercentageParam;
         }
 
         /// <summary>Returns the percentage equivalent to X over Y.</summary>
-        /// <param name="x">A number greater than 0.</param>
-        /// <param name="y">A number greater than 0.</param>
-        public static double CalcPercentOfXOverY(double x, double y)
+        public static double PctOfXOverY(double x, double y)
         {
             return x / y * PercentageParam;
         }
 
         /// <summary>Returns the percentage equivalent to the increase from X to Y</summary>
-        /// <param name="x">A number greater than 0.</param>
-        /// <param name="y">A number greater than 0.</param>
-        public static double CalcPercentIncreaseXToY(double x, double y)
+        public static double PctIncreaseXToY(double x, double y)
         {
             return (y - x) / x * PercentageParam;
         }
 
-        /// <summary>Returns the equivalent of increasing X percent of Y</summary>
-        /// <param name="x">A number greater than 0.</param>
-        /// <param name="y">A number greater than 0.</param>
-        public static double CalcPercentDecreaseXToY(double x, double y)
+        /// <summary>Returns the percentage equivalent to the decrease from X to Y</summary>
+        public static double PctDecreaseXToY(double x, double y)
         {
-            return Math.Abs(CalcPercentIncreaseXToY(x, y));
+            return Math.Abs(PctIncreaseXToY(x, y));
         }
 
         /// <summary>Returns the equivalent of increasing X percent of Y</summary>
-        /// <param name="x">A number greater than 0. representing percentage </param>
-        /// <param name="y">A number greater than 0.</param>
-        public static double CalcIncreaseXPercentOfY(double x, double y)
+        public static double IncreaseXPctOfY(double x, double y)
         {
-            return x + CalcPercentageYOfX(x, y);
+            return x + PctYOfX(x, y);
         }
 
         /// <summary>Returns the equivalent of decreasing X percent of Y</summary>
-        /// <param name="x">A number greater than 0. representing percentage </param>
-        /// <param name="y">A number greater than 0.</param>
-        public static double CalcDecreaseXPercentOfY(double x, double y)
+        public static double DecreaseXPctOfY(double x, double y)
         {
-            return x - CalcPercentageYOfX(x, y);
+            return x - PctYOfX(x, y);
         }
 
-        private static double CalcPercentageYOfX(double x, double y)
+        private static double PctYOfX(double x, double y)
         {
             return y / PercentageParam * x;
         }
