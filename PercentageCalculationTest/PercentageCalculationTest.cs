@@ -43,15 +43,15 @@ namespace PercentageCalculationTest
         [Test]
         public void Test5()
         {
-            double result = Percentage.IncreaseXPctOfY(100, 10);
-            Assert.AreEqual(110, result);
+            double result = Percentage.IncreaseXPctOfY(10, 50);
+            Assert.AreEqual(55, result);
         }
 
         [Test]
         public void Test6()
         {
-            double result = Percentage.DecreaseXPctOfY(100, 10);
-            Assert.AreEqual(90, result);
+            double result = Percentage.DecreaseXPctOfY(10, 50);
+            Assert.AreEqual(45, result);
         }
     }
 }

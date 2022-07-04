@@ -31,18 +31,18 @@
         /// <summary>Returns the equivalent of increasing X percent of Y</summary>
         public static double IncreaseXPctOfY(double x, double y)
         {
-            return x + PctYOfX(x, y);
+            return y + PctYOfX(x, y);
         }
 
         /// <summary>Returns the equivalent of decreasing X percent of Y</summary>
         public static double DecreaseXPctOfY(double x, double y)
         {
-            return x - PctYOfX(x, y);
+            return y - PctYOfX(x, y);
         }
 
         private static double PctYOfX(double x, double y)
         {
-            return y / PercentageParam * x;
+            return x / PercentageParam * y;
         }
     }
 }
