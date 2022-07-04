@@ -5,9 +5,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <AssemblyVersion>1.0.0.5</AssemblyVersion>
-    <FileVersion>1.0.0.5</FileVersion>
-    <Version>1.0.0.5</Version>
+    <AssemblyVersion>1.0.0.8</AssemblyVersion>
+    <FileVersion>1.0.0.8</FileVersion>
+    <Version>1.0.0.8</Version>
     <Authors>saviocarvalho</Authors>
     <Description>percentage math calculations</Description>
     <RepositoryUrl>https://github.com/carvalhosavio/PercentageCalculation</RepositoryUrl>
@@ -24,11 +24,6 @@
     <Compile Remove="NovaPasta\**" />
     <EmbeddedResource Remove="NovaPasta\**" />
     <None Remove="NovaPasta\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Enums\" />
-    <Folder Include="Entities\" />
   </ItemGroup>
 
   <ItemGroup>

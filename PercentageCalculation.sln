@@ -5,7 +5,11 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PercentageCalculator", "PercentageCalculator\PercentageCalculator.csproj", "{78A4EC8F-9434-4A8C-9BEE-A2D1BEFDCC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PercentageCalculationTest", "PercentageCalculationTest\PercentageCalculationTest.csproj", "{C34F027A-0B24-40F4-B680-750E8D2F6AB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PercentageCalculationTest", "PercentageCalculationTest\PercentageCalculationTest.csproj", "{C34F027A-0B24-40F4-B680-750E8D2F6AB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Solution", "1-Solution", "{D61877E8-ED60-4CB7-9958-D7ECEE67673D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Test", "2-Test", "{6B9C8112-F628-4D8E-AE90-E6E218E4D7F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78A4EC8F-9434-4A8C-9BEE-A2D1BEFDCC56} = {D61877E8-ED60-4CB7-9958-D7ECEE67673D}
+		{C34F027A-0B24-40F4-B680-750E8D2F6AB3} = {6B9C8112-F628-4D8E-AE90-E6E218E4D7F6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32510783-E976-4346-830D-69B9B929F37F}
